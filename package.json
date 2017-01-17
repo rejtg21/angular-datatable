@@ -1,0 +1,21 @@
+{
+  "name": "angular-datatable",
+  "version": "1.0.0",
+  "description": "Angular way to handle data in a table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular-datatable",
+    "angular-table",
+    "datatable"
+  ],
+  "author": "Rej Mediodia",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-bootstrap": "^2.2.0",
+    "bootstrap": "^3.3.7"
+  }
+}

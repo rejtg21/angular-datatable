@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app ="app">
+  <head>
+    <title> Angular Datatable </title>
+    <link rel="stylesheet" type="text/css" href = "../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href = "../node_modules/bootstrap/dist/css/bootstrap-theme.css">
+  </head>
+  <body>
+    <div class ="container" ng-controller ="AppController">
+      <div class ="row">
+        <div class = "col-md-12">
+          <h1> Angular datatable Demo</h1>
+          <hr>
+          <rdatatable url = "server/sample.php">
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th col-name = "fname" rsort="test">First Name</th>
+                    <th col-name = "mname" rsort="test1">Middle Name</th>
+                    <th col-name = "lname" rsort="">Last Name</th>
+                    <th col-name = "action" width="8%" rsort="false">Actions</th>
+                  </tr>
+                  <tr>
+                      <td><input type ="text" class = "form-control" rsearch = "test" placeholder="Search First Name"></td>
+                      <td><input type ="text" class = "form-control" rsearch = "test2" placeholder="Search Middle Name"></td>
+                      <td><input type ="text" class = "form-control" rsearch = "test3" placeholder="Search Last Name"></td>
+                      <td>
+                          <button class="btn btn-warning" rdt-search title = "Search">
+                              <span class = "glyphicon glyphicon-search"></span>
+                          </button>
+                          <button class="btn btn-danger" rdt-reset title = "Reset">
+                              <span class = "glyphicon glyphicon-repeat"></span>
+                          </button>
+                      </td>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </div>
+          </rdatatable>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+  <script src = "../node_modules/angular/angular.js"></script>
+  <script src = "../node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+  <script src = "../src/angular-datatable.module.js"></script>
+  <script src = "../src/constants/rdatatable.constant.js"></script>
+  <script src = "../src/col-name.directive.js"></script>
+  <script src = "../src/rdatatable.directive.js"></script>
+  <script src = "../src/rdt-reset.directive.js"></script>
+  <script src = "../src/rdt-search.directive.js"></script>
+  <script src = "../src/rheader.directive.js"></script>
+  <script src = "../src/rfooter.directive.js"></script>
+  <script src = "../src/rpagination.directive.js"></script>
+  <script src = "../src/rsearch.directive.js"></script>
+  <script src = "../src/rview.directive.js"></script>
+  <script src = "../src/tbody.directive.js"></script>
+  <!-- Page level script -->
+  <script src = "js/index.js"></script>
+
+</html>

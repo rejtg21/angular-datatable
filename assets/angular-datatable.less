@@ -1,0 +1,48 @@
+// out: angular-datatable.css
+ul {
+  &.rpagination {
+    margin: 0px !important;
+  }
+}
+
+rdatatable {
+  table {
+    > thead {
+      > tr {
+        > th {
+          > .sorting {
+            cursor: pointer;
+            *cursor: hand;
+          }
+
+          > .sorting_desc {
+            cursor: pointer;
+            *cursor: hand;
+          }
+
+          > .sorting_asc {
+            cursor: pointer;
+            *cursor: hand;
+            background-repeat: no-repeat;
+            background-position: center right;
+          }
+
+        }
+      }
+    }
+
+    > tbody {
+      height:100px !important;
+    }
+  }
+
+  .table-hover {
+    > tbody {
+      > tr {
+      &:hover {
+        background-color : #ADD8E6 !important;
+      }
+     }
+    }
+  }
+}
